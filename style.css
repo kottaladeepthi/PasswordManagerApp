@@ -1,0 +1,60 @@
+/*############## global styling ###########*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*root is the css global class to declare some variables*/
+    --global-background-color:#171717;
+    --link-backgroung-color:#DA0037;
+    --global-text-color: #EDEDED;
+    --text-hover-color:#444444;
+    --gray-color: rgba(255,255,255,0.1);
+
+}
+html{
+    background-color: var(--global-background-color);
+    color: var(--global-text-color);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--global-text-color);
+}
+a:hover{
+    color: var(--text-hover-color);
+}
+input{
+    width: 70%;
+    margin: 10px auto;
+    padding: 5px;
+    border: none;
+}
+input:focus{
+    border: solid 1px var(--link-backgroung-color);
+}
+
+/*########### header ##########*/
+
+header{
+box-shadow: 0 10px 15px -3px var(--gray-color);
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+header nav ul li{
+    margin: 5px;
+
+}
