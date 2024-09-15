@@ -58,3 +58,25 @@ header nav ul li{
     margin: 5px;
 
 }
+
+@media screen and (max-width: 640px){
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .brand{
+        margin-bottom: 30px;
+    }
+}
+
+/*#########   footer #######"*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 10px 0 15px var(--gray-color);
+}
