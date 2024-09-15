@@ -80,3 +80,37 @@ footer{
     width: 100%;
     box-shadow: 0 10px 0 15px var(--gray-color);
 }
+/*#########   modals #######"*/
+
+.modals-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: var(--global-text-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.modal{
+    background-color: var(--global-background-color);
+    min-width: 400px;
+    min-height: 400px;
+    padding: 20px;
+}
+
+#close-modal{
+    background-color: var(--link-background-collor);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#login-modal, #signup-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

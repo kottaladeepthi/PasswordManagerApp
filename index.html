@@ -7,7 +7,7 @@
         <title> Django Password Manager</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
+        <script src="main.js" defer></script>
     </head>
     <body>
         <header>
@@ -15,11 +15,25 @@
                 <div class="brand"><a href=""><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Password Manager</a></div>
                 <ul>
                     <li><a href="">Home</a> </li>
-                    <li><a href="">Login</a> </li>
+                    <li><a href="javascript:;" onclick="displayModal('login-modal');">Login</a> </li>
                     <li><a href="">SignUp</a> </li>
                 </ul>
             </nav>
         </header>
+
+        <!--Modals-->
+    <div class="modals-wrapper">
+        <span id="close-modal" title="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--login modal-->
+        <div class="modal" id="login-modal">
+            <form action="">
+                <h2>Login</h2>
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" value="login">
+            </form>
+        </div>
+
 
         <footer>
             <a href="">Link To The Project</a>
