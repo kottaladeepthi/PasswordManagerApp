@@ -8,7 +8,7 @@
 :root{
     /*root is the css global class to declare some variables*/
     --global-background-color:#171717;
-    --link-backgroung-color:#DA0037;
+    --link-background-color:#DA0037;
     --global-text-color: #EDEDED;
     --text-hover-color:#444444;
     --gray-color: rgba(255,255,255,0.1);
@@ -100,7 +100,7 @@ footer{
 }
 
 #close-modal{
-    background-color: var(--link-background-collor);
+    background-color: var(--link-background-color);
     position: absolute;
     top: 5%;
     right: 5%;
@@ -113,4 +113,16 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#password-modal, #add-password-modal{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.copy{
+    cursor: pointer;
 }
