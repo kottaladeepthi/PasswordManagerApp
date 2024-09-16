@@ -29,3 +29,21 @@ copies.forEach(copy =>{
         document.execCommand("copy");
     }
 })
+
+//Display the actions of the password card for mobile devices
+const actions = document.querySelectorAll(".actions");
+if (actions){
+    actions.forEach(action =>{
+        action.onclick = () =>{
+            const links = action.querySelectorAll("a");
+            links.forEach(link =>{
+                link.style.display = "flex";
+            })
+            setTimeout(function(){
+                links.forEach(link =>{
+                    link.style.display = "none";
+                })}
+            , 3000)
+        }
+    })
+}
